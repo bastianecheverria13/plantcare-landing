@@ -87,15 +87,13 @@ export default function Hero() {
           </div>
 
           <h1 className="hero-title">
-            <span className="title-line">Nunca más</span>
-            <span className="title-line green">Plantas muertas</span>
-            <span className="title-line">En tu hogar</span>
+            <span className="title-line">Tu planta</span>
+            <span className="title-line green">te está hablando</span>
+            <span className="title-line">¿La estás escuchando?</span>
           </h1>
 
           <p className="hero-description">
-            PlantCare es tu asistente personal de jardinería. Recibe recordatorios inteligentes 
-            de riego, conecta sensores IoT para monitorear humedad y luz en tiempo real, 
-            y obtén consejos expertos adaptados a cada una de tus plantas.
+          bol gay
           </p>
 
           <div className="download-buttons">
