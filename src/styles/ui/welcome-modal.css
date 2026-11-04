@@ -1,0 +1,196 @@
+/* ===== WELCOME MODAL ===== */
+.welcome-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s var(--transition), visibility 0.4s var(--transition);
+}
+
+.welcome-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.welcome-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    background: var(--bg-card);
+    border: 1px solid var(--border-accent);
+    border-radius: 28px;
+    padding: 3.5rem 3rem;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5), 0 0 60px var(--accent-glow);
+    transform: scale(0.9) translateY(20px);
+    transition: transform 0.5s var(--transition);
+}
+
+.welcome-modal.active .welcome-content {
+    transform: scale(1) translateY(0);
+}
+
+.welcome-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--text-body);
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s var(--transition);
+    line-height: 1;
+    font-weight: 300;
+}
+
+.welcome-close:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--btn-text);
+    transform: rotate(90deg) scale(1.1);
+}
+
+.welcome-character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.character-img {
+    width: 180px;
+    height: auto;
+    animation: characterFloat 3s ease-in-out infinite;
+    filter: drop-shadow(0 8px 24px rgba(92, 184, 92, 0.3));
+}
+
+@keyframes characterFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.character-speech-bubble {
+    position: relative;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.8rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.character-speech-bubble::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid var(--border);
+}
+
+.character-speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 19px solid var(--bg);
+}
+
+.speech-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-body);
+    text-align: center;
+    margin: 0;
+}
+
+.speech-text strong {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.welcome-button {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.1rem 2.5rem;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.35s var(--transition);
+    box-shadow: 0 8px 28px var(--accent-glow);
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.welcome-button:hover::before {
+    opacity: 1;
+}
+
+.welcome-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 48px var(--accent-glow);
+}
+
+.welcome-button:active {
+    transform: translateY(-1px);
+}
+
+.button-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s var(--transition);
+}
+
+.welcome-button:hover .button-arrow {
+    transform: translateX(5px);
+}

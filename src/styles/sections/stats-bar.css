@@ -1,0 +1,38 @@
+/* ===== STATS BAR ===== */
+.stats-bar {
+    background:var(--bg-2);
+    border-top:1px solid var(--border); 
+    border-bottom:1px solid var(--border);
+    padding:3rem 5%;
+}
+
+.stats-inner {
+    max-width:1320px; 
+    margin:0 auto;
+    display:grid; 
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem; 
+    text-align:center;
+}
+
+.stat-item { 
+    opacity:0; 
+    transform:translateY(18px); 
+}
+
+.stat-number {
+    font-family:'Bebas Neue',sans-serif;
+    font-size:clamp(2.8rem,5vw,4.5rem);
+    color:var(--accent); 
+    line-height:1; 
+    letter-spacing:0.02em;
+}
+
+.stat-label {
+    font-size:0.75rem; 
+    font-weight:700;
+    letter-spacing:0.12em; 
+    text-transform:uppercase;
+    color:var(--text-body); 
+    margin-top:0.4rem;
+}

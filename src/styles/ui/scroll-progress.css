@@ -1,0 +1,11 @@
+/* ===== SCROLL PROGRESS ===== */
+.scroll-progress {
+    position:fixed; 
+    top:0; 
+    left:0; 
+    height:2px; 
+    width:0;
+    background:var(--accent); 
+    z-index:9997; 
+    transition:width 0.1s linear;
+}

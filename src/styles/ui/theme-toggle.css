@@ -1,0 +1,32 @@
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+    position:fixed; 
+    top:50%; 
+    right:1.5rem;
+    transform:translateY(-50%);
+    z-index:1001;
+    width:44px; 
+    height:44px;
+    background:var(--bg-card); 
+    border:1px solid var(--border);
+    border-radius:50%; 
+    cursor:pointer;
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+    font-size:1.2rem;
+    transition:all 0.35s var(--transition);
+    box-shadow:var(--card-shadow);
+}
+
+.theme-toggle:hover {
+    border-color:var(--accent);
+    box-shadow:0 0 20px var(--accent-glow);
+    transform:translateY(-50%) scale(1.1);
+}
+
+.icon-sun  { display:none; }
+.icon-moon { display:block; }
+
+[data-theme="light"] .icon-sun  { display:block; }
+[data-theme="light"] .icon-moon { display:none; }

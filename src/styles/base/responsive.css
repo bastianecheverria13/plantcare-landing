@@ -1,0 +1,280 @@
+/* ===== RESPONSIVE ===== */
+@media (max-width:1024px) {
+    .hero-wrapper { 
+        grid-template-columns:1fr; 
+        gap:4rem; 
+        text-align:center; 
+    }
+    
+    .hero-description { 
+        max-width:100%; 
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .download-buttons { 
+        justify-content:center; 
+    }
+    
+    .hero-eyebrow { 
+        margin-left:auto; 
+        margin-right:auto; 
+    }
+    
+    .logo-container { 
+        max-width:300px; 
+        margin:0 auto; 
+    }
+    
+    .features-grid { 
+        grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); 
+    }
+
+    .coming-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    #header { 
+        padding:1rem 5%; 
+    }
+    
+    .logo-header-img { 
+        height:50px; 
+    }
+    
+    #header.scrolled .logo-header-img { 
+        height:40px; 
+    }
+    
+    .hero { 
+        padding:7rem 5% 4rem; 
+    }
+    
+    .features, .cta { 
+        padding:6rem 5%; 
+    }
+    
+    .features-grid { 
+        grid-template-columns:1fr; 
+        gap:1rem; 
+    }
+    
+    .stats-inner { 
+        grid-template-columns:1fr; 
+        gap:2rem; 
+    }
+    
+    .store-button { 
+        width:100%; 
+        justify-content:center; 
+    }
+    
+    .back-to-top { 
+        bottom:1.5rem; 
+        right:1.5rem; 
+    }
+    
+    .theme-toggle { 
+        top:auto; 
+        bottom:5.5rem; 
+        right:1.5rem; 
+        transform:none; 
+    }
+    
+    .theme-toggle:hover { 
+        transform:scale(1.1); 
+    }
+
+    .coming-soon {
+        padding: 8rem 5%;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .countdown-item {
+        min-width: 100px;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .countdown-number {
+        font-size: 2.8rem;
+    }
+
+    .countdown-separator {
+        font-size: 2rem;
+    }
+
+    .coming-features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .notify-me-section {
+        padding: 2.5rem 2rem;
+    }
+    
+    .notify-plant-img {
+        width: 140px;
+    }
+    
+    .notify-speech-bubble {
+        padding: 1rem 1.2rem;
+        max-width: 95%;
+    }
+    
+    .notify-speech-text {
+        font-size: 0.85rem;
+    }
+
+    .notify-form {
+        flex-direction: column;
+    }
+
+    .notify-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer {
+        padding:4rem 5% 2.5rem;
+    }
+
+    .footer-logo {
+        height:55px;
+    }
+
+    .footer-tagline {
+        font-size:0.95rem;
+    }
+
+    .footer-links {
+        gap:1.5rem;
+    }
+
+    .footer-link {
+        font-size:0.85rem;
+    }
+
+    .footer-bottom {
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    .welcome-content {
+        padding: 2.5rem 2rem;
+        width: 95%;
+    }
+
+    .character-img {
+        width: 150px;
+    }
+
+    .character-speech-bubble {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .speech-text {
+        font-size: 0.95rem;
+    }
+
+    .welcome-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px) {
+    .hero-title { 
+        font-size:3rem; 
+    }
+    
+    .section-title { 
+        font-size:2.5rem; 
+    }
+    
+    .cta-title { 
+        font-size:2.8rem; 
+    }
+    
+    .stat-number { 
+        font-size:2.5rem; 
+    }
+    
+    .logo-container { 
+        max-width:250px; 
+    }
+    
+    .feature-card { 
+        padding:2rem; 
+    }
+
+    .coming-title {
+        font-size: 3rem;
+    }
+
+    .countdown-item {
+        min-width: 80px;
+        padding: 1rem;
+    }
+
+    .countdown-number {
+        font-size: 2.2rem;
+    }
+
+    .countdown-separator {
+        display: none;
+    }
+
+    .coming-feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-logo {
+        height:50px;
+    }
+
+    .footer-tagline {
+        font-size:0.9rem;
+    }
+
+    .footer-links {
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    .welcome-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .character-img {
+        width: 130px;
+    }
+
+    .character-speech-bubble {
+        padding: 1.3rem 1.2rem;
+    }
+
+    .speech-text {
+        font-size: 0.9rem;
+    }
+
+    .welcome-close {
+        width: 36px;
+        height: 36px;
+        font-size: 1.5rem;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    *,*::before,*::after { 
+        animation-duration:0.01ms !important; 
+        transition-duration:0.01ms !important; 
+    }
+}
