@@ -1,0 +1,37 @@
+/* ===== CURSOR ===== */
+#cursor {
+    position:fixed; 
+    width:7px; 
+    height:7px;
+    background:var(--accent); 
+    border-radius:50%;
+    pointer-events:none; 
+    z-index:9999;
+    transform:translate(-50%,-50%);
+    opacity:0; 
+    transition:opacity 0.3s, width 0.2s, height 0.2s;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+#cursor.active { opacity:1; }
+#cursor.hover  { width:14px; height:14px; }
+
+#cursorFollower {
+    position:fixed; 
+    width:30px; 
+    height:30px;
+    border:1.5px solid var(--accent); 
+    border-radius:50%;
+    pointer-events:none; 
+    z-index:9998;
+    transform:translate(-50%,-50%);
+    opacity:0; 
+    transition:opacity 0.3s, width 0.3s, height 0.3s;
+}
+
+#cursorFollower.active { opacity:0.5; }
+#cursorFollower.hover  { width:46px; height:46px; opacity:0.3; }
+
+@media (hover:none) and (pointer:coarse) {
+    #cursor, #cursorFollower { display:none !important; }
+}

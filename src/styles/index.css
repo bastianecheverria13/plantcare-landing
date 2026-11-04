@@ -1,0 +1,19 @@
+/* PlantCare — estilos globales.
+   El orden importa: tokens → reset → componentes → responsive (siempre al final). */
+
+@import './base/tokens.css';
+@import './base/reset.css';
+@import './ui/cursor.css';
+@import './ui/scroll-progress.css';
+@import './ui/theme-toggle.css';
+@import './ui/preloader.css';
+@import './layout/header.css';
+@import './sections/hero.css';
+@import './sections/stats-bar.css';
+@import './sections/features.css';
+@import './sections/coming-soon.css';
+@import './sections/cta.css';
+@import './layout/footer.css';
+@import './ui/back-to-top.css';
+@import './ui/welcome-modal.css';
+@import './base/responsive.css';
