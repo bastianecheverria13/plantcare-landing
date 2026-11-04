@@ -12,8 +12,8 @@ footer {
 }
 
 .footer-logo {
-    height:70px; 
-    margin:0 auto 2rem; 
+    height:120px; 
+    margin:-1.5rem auto 0.5rem; 
     display:block;
     filter:var(--logo-filter); 
     opacity:0.9; 

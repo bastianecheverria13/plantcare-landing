@@ -31,12 +31,15 @@
 }
 
 .logo-header-img {
-    height:60px; 
+    /* El PNG trae mucho margen transparente: se agranda y se compensa con margen negativo */
+    height:84px; 
     width:auto;
+    margin:-14px 0;
     filter:var(--logo-filter);
     transition:all 0.4s var(--transition);
 }
 
 #header.scrolled .logo-header-img { 
-    height:50px; 
+    height:70px; 
+    margin:-12px 0;
 }

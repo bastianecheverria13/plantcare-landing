@@ -153,7 +153,7 @@
     color: var(--btn-text);
     border: none;
     border-radius: 100px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     font-size: 1.05rem;
     font-weight: 700;
     cursor: pointer;

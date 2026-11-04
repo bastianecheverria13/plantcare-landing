@@ -1,3 +1,10 @@
+/* ===== TIPOGRAFÍA ===== */
+/* Si Bebas Neue no carga, las alternativas son condensadas para que los títulos no cambien de ancho. */
+:root {
+    --font-display:   'Bebas Neue', 'Oswald', Impact, 'Arial Narrow', sans-serif;
+    --font-body:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 /* ===== MODO OSCURO (default) ===== */
 :root {
     --bg:             #0d0d0d;
@@ -6,8 +13,15 @@
     --border:         rgba(255,255,255,0.08);
     --border-accent:  rgba(92,184,92,0.45);
     --text-h:         #f2f2f2;
-    --text-body:      #999999;
-    --text-muted:     #444444;
+    --text-body:      #a3a3a3;
+    --text-muted:     #808080;   /* antes #444: no se leía sobre fondo negro */
+    --cta-bg:         radial-gradient(120% 140% at 50% 0%, #6fcf6f 0%, #5cb85c 45%, #3f8f3f 100%);
+    --cta-text:       #0d0d0d;
+    --cta-text-dim:   rgba(0,0,0,0.68);
+    --cta-btn-bg:     #0d0d0d;
+    --cta-btn-text:   #f2f2f2;
+    --cta-outline-border: rgba(0,0,0,0.25);
+    --cta-outline-hover:  rgba(0,0,0,0.07);
     --accent:         #5cb85c;
     --accent-dim:     rgba(92,184,92,0.12);
     --accent-glow:    rgba(92,184,92,0.30);
@@ -33,7 +47,14 @@
     --border-accent:  rgba(45,95,63,0.35);
     --text-h:         #111111;
     --text-body:      #5a5a5a;
-    --text-muted:     #b0b0b0;
+    --text-muted:     #6b6b6b;   /* antes #b0b0b0: casi invisible sobre fondo claro */
+    --cta-bg:         radial-gradient(120% 140% at 50% 0%, #3b7a51 0%, #2d5f3f 50%, #1f4430 100%);
+    --cta-text:       #ffffff;
+    --cta-text-dim:   rgba(255,255,255,0.78);
+    --cta-btn-bg:     #ffffff;
+    --cta-btn-text:   #1f4430;
+    --cta-outline-border: rgba(255,255,255,0.4);
+    --cta-outline-hover:  rgba(255,255,255,0.1);
     --accent:         #2d5f3f;
     --accent-dim:     rgba(45,95,63,0.09);
     --accent-glow:    rgba(45,95,63,0.22);
